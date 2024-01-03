@@ -7,11 +7,14 @@ import Navbar from './components/Navbar';
 
 const App = () => {
   const [cartItems, setCartItems] = useState([]);
-
+const cartImg="https://dummyimage.com/450x300/dee2e6/6c757d.jpg"
   const products = [
-    { id: 1, name: 'Product 1', price: 10, image: 'https://via.placeholder.com/150' },
-    { id: 2, name: 'Product 2', price: 20, image: 'https://via.placeholder.com/150' },
-    { id: 3, name: 'Product 3', price: 30, image: 'https://via.placeholder.com/150' },
+    { id: 1, name: 'Product 1', price: 10, image: cartImg },
+    { id: 2, name: 'Product 2', price: 20, image: cartImg },
+    { id: 3, name: 'Product 3', price: 30, image: cartImg },
+    { id: 4, name: 'Product 4', price: 10, image: cartImg },
+    { id: 5, name: 'Product 5', price: 20, image: cartImg },
+    { id: 6, name: 'Product 6', price: 30, image: cartImg },
   ];
 
   const addToCart = (product) => {
@@ -86,54 +89,3 @@ export default App;
 
 
 
-// ====================================================
-// import { useState } from 'react'
-// import './App.css'
-// import ProductList from './pages/ProductList'
-
-// function App() {
-//   const [count, setCount] = useState(0)
-
-//   return (
-//     <>
-//       <div>
-//         <div>
-//           Shop in style
-//         </div>
-//       <nav className="navbar navbar-expand-lg bg-body-tertiary">
-//           <div className="container-fluid">
-//             <div className="collapse navbar-collapse" id="navbarSupportedContent">
-//               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-//                 <li className="nav-item">
-//                   <a className="nav-link active" aria-current="page" href="#">Home</a>
-//                 </li>
-//                 <li className="nav-item">
-//                   <a className="nav-link" href="#">About</a>
-//                 </li>
-//                 <li className="nav-item dropdown">
-//                   <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-//                     Shop
-//                   </a>
-//                   <ul className="dropdown-menu">
-//                     <li><a className="dropdown-item" href="#">All Products</a></li>
-//                     <li><hr className="dropdown-divider"/></li>
-//                     <li><a className="dropdown-item" href="#">Popular Items</a></li>
-//                     <li><a className="dropdown-item" href="#">New Arrivals</a></li>
-//                   </ul>
-//                 </li>
-              
-//               </ul>
-//               <button className="btn btn-outline-success" type="submit">Search</button>
-
-//             </div>
-//           </div>
-//       </nav>
-
-//         <ProductList/>
-//       </div>
-        
-//     </>
-//   )
-// }
-
-// export default App
